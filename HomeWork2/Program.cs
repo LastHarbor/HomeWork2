@@ -17,27 +17,27 @@ namespace HomeWork2
            
             Console.WriteLine("Введите Email: ");   string Email = Console.ReadLine();
            
-            Console.WriteLine("Балл по программированию: ");   float ProgScore = float.Parse(Console.ReadLine());
+            Console.WriteLine("Балл по программированию: ");   float progScore = float.Parse(Console.ReadLine());
             
-            Console.WriteLine("Балл по математике: ");   float MathScore = float.Parse(Console.ReadLine());
+            Console.WriteLine("Балл по математике: ");   float mathScore = float.Parse(Console.ReadLine());
 
-            Console.WriteLine("Балл по физике: ");   float PhysScore = float.Parse(Console.ReadLine());
+            Console.WriteLine("Балл по физике: ");   float physScore = float.Parse(Console.ReadLine());
             Console.Clear();
 
             
             string Pattern = "Имя - {0}\nВозраст - {1}\nEmail - {2}\nПрограммирование - {3}\tМатематика - {4}\tФизика - {5} ";
-            Console.WriteLine(Pattern,Name,Age,Email,ProgScore,MathScore,PhysScore);
+            Console.WriteLine(Pattern,Name,Age,Email,progScore,mathScore,physScore);
             Console.ReadKey(); Console.Clear();
 
             #endregion
 
             #region Задание 2
 
-            float AllScore = ProgScore + MathScore + PhysScore;
+            float allScore = progScore + mathScore + physScore;
             
-            float midScore = (PhysScore + MathScore + PhysScore) / 3;
+            float midScore = allScore / 3;
 
-            Console.WriteLine($"Сумма баллов - {AllScore}\nСредний балл - {midScore}");
+            Console.WriteLine($"Сумма баллов - {allScore}\nСредний балл - {midScore}");
 
             #endregion
         }
